@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="STYLE/SCSS/main.css">
+    <title>KEYSER - Accueil</title>
+</head>
+<body class="bg-black">
+    <header>
+        <nav class="w-screen h-14 xl:h-24 bg-black flex items-center justify-between">
+            <div class="nav__brand w-auto px-4 h-full flex items-center justify-center xl:text-5xl text-3xl xs:text-xl font-bold text-white">
+                <a href="/" class="hover:brightness-50 transition">
+                KEYSER
+                </a>
+            </div>
+            <div class="nav__links hidden xl:flex w-5/12 h-full items-center justify-around text-xs font-bold text-white">
+                <a href="/" class="hover:brightness-50 transition">
+                    ACCUEIL
+                </a>
+                <a href="#news" class="hover:brightness-50 transition">
+                    MUSIQUES
+                </a>
+                <a href="/" class="hover:brightness-50 transition">
+                    INFOS
+                </a>
+                <a href="/">
+                    <img src="STYLE/IMG/ico-letter.png" class="h-6 hover:brightness-50 transition">
+                </a>
+            </div>
+            <div class="nav__menu xl:hidden lg:block h-14 flex items-center justify-around">
+                <a href="/">
+                    <img src="STYLE/IMG/ico-menu.svg" class="w-8 mx-4 h-full hover:brightness-50 transition">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <div id="hero" class="h-auto w-screen">
+                <section class="w-screen h-auto bg-black">
+                    <a href="/">
+                        <img src="STYLE/IMG/hero-bg.jpg" class="w-full hover:brightness-50 transition">
+                    </a>
+                </section>
+            </div>
+            <div id="news" class="w-screen bg-black mt-16">
+                <a href="#news" class="flex pl-8 sm:text-5xl text-3xl font-bold text-white xl:justify-start justify-center">
+                    DERNIÈRES SORTIES
+                </a>
+                <div class="w-screen px-8 mt-8 flex grid xl:grid-cols-3 xl:gap-3 lg:grid-cols-2 lg:gap-2 sm:grid-cols-1 sm:gap-1 xs:grid-cols-1 xs:gap-1 justify-center">
+                    <div>
+                        <a href="#" class="flex justify-center">
+                            <img src="STYLE/IMG/artwork-losing-me.jpg" class="px-8 py-8 hover:brightness-50 transition">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="flex justify-center">
+                            <img src="STYLE/IMG/artwork-skin.jpg" class="px-8 py-8 hover:brightness-50 transition">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="about" class="w-screen bg-black">
+                <a href="#about" class="flex pl-8 sm:text-5xl text-3xl font-bold text-white xl:justify-start justify-center">
+                    INFOS
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
