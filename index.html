@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="STYLE/SCSS/main.css">
+    <script src="JS/jquery.js" defer></script>
+    <script src="JS/mobile-menu.js" defer></script>
     <title>KEYSER - Accueil</title>
 </head>
 <body class="bg-black">
@@ -23,7 +25,7 @@
                 <a href="#news" class="hover:brightness-50 transition">
                     MUSIQUES
                 </a>
-                <a href="/" class="hover:brightness-50 transition">
+                <a href="#about" class="hover:brightness-50 transition">
                     INFOS
                 </a>
                 <a href="/">
@@ -31,7 +33,7 @@
                 </a>
             </div>
             <div class="nav__menu xl:hidden lg:block h-14 flex items-center justify-around">
-                <a href="/">
+                <a href="/" id="mobile-menu">
                     <img src="STYLE/IMG/ico-menu.svg" class="w-8 mx-4 h-full hover:brightness-50 transition">
                 </a>
             </div>
@@ -48,7 +50,7 @@
                 </section>
             </div>
             <div id="news" class="w-screen bg-black mt-16">
-                <a href="#news" class="flex pl-8 sm:text-5xl text-3xl font-bold text-white xl:justify-start justify-center">
+                <a href="#news" class="flex xl:pl-8 sm:text-5xl text-3xl font-bold text-white xl:justify-start justify-center">
                     DERNIÈRES SORTIES
                 </a>
                 <div class="w-screen px-8 mt-8 flex grid xl:grid-cols-3 xl:gap-3 lg:grid-cols-2 lg:gap-2 sm:grid-cols-1 sm:gap-1 xs:grid-cols-1 xs:gap-1 justify-center">
@@ -64,17 +66,36 @@
                     </div>
                 </div>
             </div>
-            <div id="about" class="w-screen bg-black">
-                <a href="#about" class="flex pl-8 sm:text-5xl text-3xl font-bold text-white xl:justify-start justify-center">
+            <div id="about" class="w-screen bg-black mt-24">
+                <a href="#about" class="flex xl:pl-8 sm:text-5xl text-3xl font-bold text-white xl:justify-start justify-center">
                     INFOS
                 </a>
                 <div class="flex justify-center">
-                    <p class="w-8/12 lg:w-11/12 italic mt-8 text-zinc-400 flex justify-center leading-7">
-                        "Keyser est un artiste français. De son vrai nom Thomas, il né dans le sud de la france. <br>Dès son plus jeune âge, il est prit de passion lorsqu'il voit son père jouer de la basse. Rapidement, il prendra des cours de guitare dès l'âge de 8 ans. <br>C'est ainsi que sa passion pour la musique née et grandi en lui jusqu'à ses 15 ans où il tombera sur une vidéo d'Avicii en studio.
+                    <p class="w-10/12 lg:w-11/12 italic mt-8 text-zinc-400 flex justify-center lg:leading-7">
+                        "Keyser est un DJ & producteur français. De son vrai nom Thomas, il né dans le sud de la france. <br>Dès son plus jeune âge, il est prit de passion lorsqu'il voit son père jouer de la basse. Rapidement, il prendra des cours de guitare dès l'âge de 8 ans. <br>C'est ainsi que sa passion pour la musique née et grandi en lui jusqu'à ses 15 ans où il tombera sur une vidéo d'Avicii en studio.
                         <br>Cette vidéo fera l'effet d'une bombe dans sa tête à tel point que le soir même, il téléchargera FL Studio et fera son premier morceau en s'enregistrant à la guitare."
                     </p>
                 </div>
             </div>
+            <div id="contact" class="w-screen bg-black mt-24 mb-24 justify-center">
+                <a href="#contact" class="flex xl:pl-8 sm:text-5xl text-3xl font-bold text-white xl:justify-start justify-center">
+                    CONTACT
+                </a>
+                <div class="flex w-screen text-white justify-center">
+                    <form action="#" method="POST" class="flex flex-col w-10/12 xl:w-7/12">
+                        <label class="mt-8">Votre nom * :</label>
+                        <input class="mt-2 px-2 py-2 text-black font-semibold" type="text" name="name" placeholder="Nom de famille">
+                        <label class="mt-8">Votre adresse e-mail * :</label>
+                        <input class="mt-2 px-2 py-2 text-black font-semibold" type="email" name="email" placeholder="exemple@exemple.com">
+                        <label class="mt-8">Votre message * :</label>
+                        <textarea class="mt-2 px-2 py-2 text-black font-semibold h-24 xl:h-48" required placeholder="Blablabla..."></textarea>
+                        <div class="w-full flex justify-center xl:justify-end">
+                            <input type="submit" value="Envoyer" class="xl:w-3/12 w-6/12 mt-8 flex justify-center font-semibold w-auto h-16 bg-white text-black cursor-pointer hover:bg-black hover:text-white hover:border-2 hover:border-white transition">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
         </div>
     </main>
 
